@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Sale</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>GARAGE SALE</h1>
+        <h2>Raising money for The Frontline Fund</h2>
+    </header>
+
+    <main>
+        <div id="container">
+            
+            <div class="creditcard">
+                    <form id="form1">
+                    <h2 id="h2">Buy Generously</h2>
+
+                        <label for="numberofwaterbottler">Number of Water Bottles ($5)</label>
+                        <input type="number" id="numberofwaterbottler" name="numberofwaterbottle" placeholder="10"><br>
+
+                        <label for="numberofcaps">Number of Caps ($20)</label>
+                        <input type="number" id="numberofcaps" name="numberofcaps" placeholder="10"><br>
+
+                        <label for="numberofpens">Number of Pens ($2)</label>
+                        <input type="number" id="numberofpens" name="numberofpens" placeholder="10"><br>
+
+                        <label for="numberofcandey">Number of Candy Bags ($10)</label>
+                        <input type="number" id="numberofcandey" name="numberofcandey" placeholder="10"><br>
+
+                        <label for="numberofcups">Number of Cup Cakes ($3)</label>
+                        <input type="number" id="numberofcups" name="numberofcups" placeholder="10"><br>
+
+
+                    <h2 id="h2">Credit Card Details</h2>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="First Last"><br>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@domain.com"><br>
+
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" ><br>
+
+                        <label for="cardnumber">Credit Card Number</label>
+                        <input type="text" id="cardnumber" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19"><br>
+
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="CVV" maxlength="3"><br>
+
+                        <label for="expirymonth">Credit Card Expiry Month</label>
+                        <input type="text" id="expirymonth" name="expirymonth" placeholder="MMM" maxlength="3"><br>
+
+                        <label for="expiryyear">Credit Card Expiry Year</label>
+                        <input type="text" id="expiryyear" name="expiryyear" placeholder="YYYY" maxlength="4"><br>
+
+                        
+
+                        <button type="submit" id="submit-btn" class="checkout">Check Out</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="invoice" style="display: none;">
+            <h3 id="h3">Invoice</h3>
+            <div id="invoice-details"></div>
+        </div>
+        
+        <div id="error-message" style="display: none; color: red;"></div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
